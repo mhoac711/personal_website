@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <script src="controls.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Hoac's Portfolio</title>
+</head>
+<body>
+    <div class="main">
+        <nav class="header">
+            <div class="logo"><img src=""/></div>
+            <h1 class="title">Portfolio Website</h1>
+
+            <section class="social-nav">
+                <div class="social-links"><a href = "https://www.facebook.com/max.hoac.7"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png"></a></div>
+                <div class="social-links"><a href = "https://www.linkedin.com/in/max-hoac/"><img src="https://familypaths.org/wp-content/uploads/2017/10/Logos-Linkedin-icon.png"></a></div>
+                <div class="social-links"><a href = "https://www.instagram.com/m_hoac/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png"></a></div>
+            </section>
+            
+        </nav>
+
+        <div class="information">
+            <div class="left-column">
+                
+                <div class="profile-pic"></div>
+                <div class="about-info-box"></div>  
+            </div>
+            <div class="middle-column">
+                <div class="overlay"></div>
+                <div id="circle">
+                    <div class="project one" id="proj1">
+                        <img src="rmc.png">
+                        <div>
+                            <h2>Rate My Clubs</h2>
+                            <p> <strong>[Group Software Project | Ruby on Rails | Front-End Developer | <a href="https://github.com/mhoac711/Rate-My-Clubs">Github Link</strong></a>] <br> Like Rate My Professors, but with clubs! This web service allows users to create and view clubs, add and view ratings, and search and filter clubs based on category or name. This application is for a semester-long group project in CS 4800 - Software Engineering at California State Polytechnic University, Pomona.</p>
+
+                        </div>
+                    </div>
+                    <div class="project two" id="proj2">
+                        <img src="rfm.png">
+                        <div>
+                            <h2>Rapid Fitness Mastery</h2>
+                            <p><strong>[Senior Project | Android Studio | <a href="https://github.com/mhoac711/Rapid-Fitness-Mastery">Github Link</strong></a>] <br> Rapid Fitness Mastery is designed to provide users with an incredibly easy way of finding and learning about a variety of exercises that are categorized by experience level and training area. Overall, Rapid Fitness Mastery hopes to alleviate some of the struggles that individuals may have when trying to obtain a healthier lifestyle.</p>
+
+                        </div>
+                    </div>
+                    <div class="project three" id="proj3">
+                        <img src="fh.png">
+                        <div>
+                            <h2>Fitness Helper</h2>
+                            <p><strong>[First App | Android Studio | <a href="https://github.com/mhoac711/cs4750-fitness-helper">Github Link</strong></a>] <br> An app that allows users can easily navigate through the numerous amount of exercises that target they specific area that seek to work out on. Within each targeted area, exercises are split into three divsions: easy, moderate, and difficult to enable users of all experience levels to be capable of trying exercises that fit their skill level.</p>
+
+                        </div>
+                    </div>
+            
+                </div>
+                <div class="controls">
+                    <img src="arrow.jpg" id="next">
+                </div>
+
+
+            </div>
+            <div class="right-column">
+                <!-- other interest maybe try to get recent scores for team games -->
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var next = document.getElementById("next");
+        var proj1 = document.getElementById("proj1");
+        var proj2 = document.getElementById("proj2");
+        var proj3 = document.getElementById("proj3");
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+       
+
+        next.onclick = function(){
+            rotateSum = rotateValue + "rotate(120deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+
+        
+
+        
+
+
+
+    </script>
+</body>
+</html>

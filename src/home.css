@@ -1,0 +1,168 @@
+html{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to left, #c376f0, #8ecdff);
+    
+}
+
+.header{
+    display: inline-flex;
+    width: 100%;   
+    z-index: 3; 
+}
+.logo{
+
+    width: 25%
+
+}
+.header h1{
+    text-align: center;
+    flex-wrap: nowrap;
+    width: 75%;
+    font-size: 30px;
+    margin-top: -.05%;
+    margin-left: 5%;
+    
+}
+
+.header .social-nav{
+    display: flex;
+    justify-content: right;
+    margin-right: 2.5%;
+    margin-left: 2%;
+    width: 25%;
+}
+
+.social-links img{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+.information{
+    display: flex;
+    width: 100%;
+
+}
+
+.left-column{
+    width: 25%;
+}
+
+.overlay img{
+    width: 2000px;
+    height: 2000px;
+    z-index: 2;
+}
+
+.middle-column{
+    align-items: center;
+    width: 50%;
+    margin-left: 25%;
+    
+
+}
+#circle{
+    width: 50%;
+    height: 1000px;
+    position: absolute;
+    top: -25%;
+    left: 25%;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.project img{
+    min-width: 75px;
+    height: max-content;
+
+}
+
+.project{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+
+
+.project div{
+    border: 5px solid #c4d8e9;
+    margin-left: 20px;
+    padding-left: 10px;
+    min-width: 350px;
+    
+}
+
+
+
+.project p{
+    margin-top: 5px;
+    max-width: 800px;
+
+}
+
+#proj1{
+    display: flex;
+}
+
+.one{
+    top: 450px;
+    right: 50px;
+    z-index: 0;
+
+}
+
+#proj2{
+    display: flex;
+}
+
+.two{
+    top: 350px;
+    left: 90px;
+    transform: rotate(-120deg);
+    z-index: 1;
+}
+
+#proj3{
+    display: flex;
+}
+
+.three{
+    top: 300px;
+    right: 50px;
+    
+    transform: rotate(-240deg);
+    z-index: 1;
+
+}
+.overlay{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.controls{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+#next{
+    width: 25px;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+
+.right-column{
+    width: 25%;
+}
+
