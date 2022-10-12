@@ -3,7 +3,7 @@ html{
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to left, #c376f0, #8ecdff);
+    background: linear-gradient(to top, #e2b0ff, #8ecdff);
     
 }
 
@@ -18,13 +18,15 @@ html{
 
 }
 .header h1{
+    color: #fff;
     text-align: center;
     flex-wrap: nowrap;
     width: 75%;
     font-size: 30px;
     margin-top: -.05%;
     margin-left: 5%;
-    
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
 }
 
 .header .social-nav{
@@ -48,8 +50,75 @@ html{
 
 }
 
+@media screen and (max-width: 1300px) {
+    .left-column h2{
+        display: none;
+        
+    }
+    .profile-pic{
+        display: none;
+    }
+    .about-info-box{
+        display: none;
+    }
+    
+}
+
 .left-column{
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    position: static;
+}
+.left-column h2{
+    font-size: 25px;
+    margin-left: 25%;
+    color: #fff;
+    min-width: none;
+    
+}
+.profile-pic {
+    width: 260px;
+    height: 220px;
+    border: 5px solid #e2b0ff;
+    margin-left: 25%;
+    
+
+}
+
+.profile-pic img {
+    width: 260px;
+    height: 220px;
+
+}
+.about-info-box{
+    margin-top: 5%;
+    width: 260px;
+    text-align: left;
+    border: 5px;
+    border-color: #c4d8e9;
+    border-style: solid;
+    margin-left: 25%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+    font-size: 14px;
+    color: #fff;
+
+}
+.about-info-box p{
+    padding-left: 3%;
+    margin-bottom: 0%;
+    font-size: 16px;
+    
+}
+
+
+
+.about-info-box ul{
+    margin-top: -.5%;
+}
+.about-info-box li{
+    padding-top: 3%;
 }
 
 .overlay img{
@@ -94,14 +163,16 @@ html{
     margin-left: 20px;
     padding-left: 10px;
     min-width: 350px;
+    max-width: 700px;
+    max-height: fit-content;
     
 }
 
 
 
 .project p{
-    margin-top: 5px;
-    max-width: 800px;
+    margin-top: 3px;
+    margin-right: 5px;
 
 }
 
@@ -111,31 +182,28 @@ html{
 
 .one{
     top: 450px;
-    right: 50px;
+    right: 100px;
     z-index: 0;
 
 }
 
 #proj2{
-    display: flex;
+    display: none;
 }
 
 .two{
-    top: 350px;
-    left: 90px;
-    transform: rotate(-120deg);
+    top: 450px;
+    right: 100px;
     z-index: 1;
 }
 
 #proj3{
-    display: flex;
+    display: none;
 }
 
 .three{
-    top: 300px;
-    right: 50px;
-    
-    transform: rotate(-240deg);
+    top: 450px;
+    right: 100px;
     z-index: 1;
 
 }
@@ -149,16 +217,24 @@ html{
 .controls{
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 45%;
     transform: translateY(-50%);
     text-align: center;
 }
 
 
 #next{
-    width: 25px;
+    margin-left: -20px;
+    margin-top: 400px;
+    width: 75px;
     cursor: pointer;
     transform: rotate(0deg);
+    background: linear-gradient(to top, #e2b0ff, #8ecdff);
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-color: #c4d8e9;
+    position: relative;
 }
 
 

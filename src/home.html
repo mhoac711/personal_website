@@ -24,9 +24,36 @@
 
         <div class="information">
             <div class="left-column">
-                
-                <div class="profile-pic"></div>
-                <div class="about-info-box"></div>  
+                <h2>About Info</h2>
+            <div class = "profile-pic">
+                <img src="isme.png"/>
+            </div>
+            <div class = about-info-box>
+                <p> Let me introduce <br>  my self: &#128517 </p>
+                <ul>
+                    <li>I graduated from Cal <br> Poly Pomona with a Bachelors of Science in Computer Science in <strong> <br>3 years</strong></li>
+                    <li>Programming Languages <br> that I've used:
+                        <ul>
+                            <li><strong>Java</strong></li>
+                            <li>Python</li>
+                            <li> C#</li>
+                            <li>Node.js</li>
+                            <li>React.js</li>
+                            <li> Android Studio</li>
+                            <li> MySQL,MongoDB</li>
+                            <li><strong>Git/Github</strong></li>
+                            <li><strong>HTML,CSS,JavaScript</strong></li>
+                        </ul>
+                    </li>
+                    <li>Other qualities
+                        <ul>
+                            <li>Great listening and <break> </break>communication skills</li>
+                            <li>Pretty good with Microsoft Office <break>
+                            </break>(word, excel, powerpoint, etc.)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
             </div>
             <div class="middle-column">
                 <div class="overlay"></div>
@@ -58,7 +85,7 @@
             
                 </div>
                 <div class="controls">
-                    <img src="arrow.jpg" id="next">
+                    <button id="next"><strong>Next</strong></button>
                 </div>
 
 
@@ -82,7 +109,21 @@
        
 
         next.onclick = function(){
-            rotateSum = rotateValue + "rotate(120deg)";
+            if(proj1.style.display !== "none"){
+                proj1.style.display = "none";
+                proj2.style.display = "flex";
+            }
+            else if(proj2.style.display !== "none"){
+                proj2.style.display = "none";
+                proj3.style.display = "flex";
+            }
+            else{
+                proj3.style.display ="none";
+                proj1.style.display = "flex";
+            };
+            
+
+            rotateSum = rotateValue + "rotate(360deg)";
             circle.style.transform = rotateSum;
             rotateValue = rotateSum;
         }
