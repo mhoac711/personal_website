@@ -228,8 +228,8 @@ html{
 
 
 #next{
-    margin-left: -65%;
-    margin-top: 20%;
+    margin-left: -40%;
+    margin-top: 10%;
     width: 75px;
     cursor: pointer;
     transform: rotate(0deg);
@@ -238,7 +238,7 @@ html{
     font-family: 'Courier New', Courier, monospace;
     color: white;
     border-color: #c4d8e9;
-    position: relative;
+    position: absolute;
 }
 
 
